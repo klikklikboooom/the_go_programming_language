@@ -1,0 +1,4 @@
+This is another test
+To see if the files
+With duplicate lines 
+Get printed on the terminal
