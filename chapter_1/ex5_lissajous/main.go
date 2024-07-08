@@ -20,7 +20,7 @@ import (
 
 //!+main
 
-var palette = []color.Color{color.Black, color.RGBA{0x00, 0xff, 0x00, 0xff}}
+var palette = []color.Color{color.Black, color.RGBA{106, 168, 79, 1}}
 
 const (
 	whiteIndex = 0 // first color in palette
@@ -28,22 +28,6 @@ const (
 )
 
 func main() {
-	// The sequence of images is deterministic unless we seed
-	// the pseudo-random number generator using the current time.
-
-	// rand.Seed(time.Now().UTC().UnixNano())
-
-	// if len(os.Args) > 1 && os.Args[1] == "web" {
-	// 	//!+http
-	// 	handler := func(w http.ResponseWriter, r *http.Request) {
-	// 		lissajous(w)
-	// 	}
-	// 	http.HandleFunc("/", handler)
-	// 	//!-http
-	// 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
-	// 	return
-	// }
-	//!+main
 	lissajous(os.Stdout)
 }
 
